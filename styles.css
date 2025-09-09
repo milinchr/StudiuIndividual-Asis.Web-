@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Roboto", serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.95); /* полупрозрачный фон */
+    z-index: 1020; /* чтобы navbar был поверх контента */
+}
