@@ -42,5 +42,28 @@ li {
 .btn-outline-light:hover {
     background-color: #fdf3cf;
     border: 1px solid #fdf3cf;
-    
+}
+
+.table-char {
+    border: 1px solid #43434c;
+    border-radius: 9px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden; 
+    background-color: #1e1e1e;
+    width: 1300px;
+    text-align: center;
+}
+
+.table-char td, tr {
+    width: 160px;
+    border: 1px solid #43434c;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #edcda5;
+}
+
+.table-char img {
+    border-radius: 8px;
+    margin: 2px;
 }
