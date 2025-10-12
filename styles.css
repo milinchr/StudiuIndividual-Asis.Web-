@@ -6,14 +6,41 @@ p {
     font-family: "Roboto", serif;
 }
 
-html, body {
-    height: 100%;
+body {
     margin: 0;
     padding: 0;
 }
 
+.Header-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
 .navbar {
-    position: sticky;
-    background-color: rgba(255, 255, 255, 0.95); /* полупрозрачный фон */
-    z-index: 1020; /* чтобы navbar был поверх контента */
+  position: sticky;
+  top: 0;
+  z-index: 1000; 
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    margin: 10px;
+}
+
+.btn-outline-light {
+    border: 1px solid #fdf3cf;
+    color: #fdf3cf;
+}
+
+.btn-outline-light:hover {
+    background-color: #fdf3cf;
+    border: 1px solid #fdf3cf;
+    
 }

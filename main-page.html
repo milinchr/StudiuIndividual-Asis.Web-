@@ -9,7 +9,7 @@
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="Header-navigation">
             <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo" height="35px" weight="35px"></img></a>
@@ -28,10 +28,11 @@
             </nav>
         </header>
 
-        <main style="height:2000px">
+        <main>
             <section>
                 <div class="card text-bg-dark" style="height: 350px; border-radius: 0; border: 0px;">
-                <img src="images/card-photo.jpg" class="card-img" alt="card-photo" style="object-fit: cover; height: 100%;">
+                <img src="images/card-photo.jpg" class="card-img" alt="card-photo" style="object-fit: cover; height: 100%; 
+                filter: brightness(75%);">
                     <div class="card-img-overlay d-flex flex-column justify-content-center" style="text-align: center;">
                         <img src="images/hsr-icon.png" style="align-self: center; height: 180px; width: auto;"></img>
                         <h5 class="card-title" style="color:#fdf3cf; font-weight: bold;
@@ -84,22 +85,102 @@
                 </div>
             </section>
             <br>
-            <section>
-                <div style="text-align: center; margin-left: 40px; margin-right: 40px;">
-                    <h3>Start your journey today and explore the galaxy of Honkai: Star Rail!</h3>
-                    <div style="display: flex; flex-direction: row; gap: 20px; justify-content: center; 
-                    margin: 20px;">
-                        <a href="story.html">
-                            <button type="button" class="btn btn-secondary">Discover the Story</button></a>
-                        <a href="characters.html">
-                            <button type="button" class="btn btn-secondary">Meet the Heroes</button></a>
+            <section class="my-5" style="background-color: #1e1e1e; display: flex; justify-content: center; padding: 30px 0;">
+                <div class="container d-flex flex-column align-items-center" style="position: relative;">
+                    <hr style="border: 2px solid #edcda5; width: 300px; margin-bottom: 20px; border-radius: 10px;">
+                    <div style="background-color: #edcda5; width: 100%; max-width: 900px; text-align: center; border-radius: 18px 18px 0 0; padding: 10px;">
+                        <h4 style="margin: 0;">Version 3.6 Trailer</h4>
                     </div>
-                    
+
+                    <div style="width: 100%; max-width: 900px; border: 2px solid #edcda5; border-radius: 0 0 18px 18px; padding: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.4); background-color: #1e1e1e;">
+                        <div style="border: 1px solid #edcda5; border-radius: 12px; overflow: hidden;">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/_2B_woXdf_E" title="YouTube video" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="border: 2px solid #edcda5; width: 300px; margin-top: 20px; border-radius: 10px;">
                 </div>
+            </section>
+            <br>
+            <section style="position: relative; height: 500px; overflow: hidden;">
+                <div id="hsrCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="height: 100%;">
+                    <div class="carousel-inner" style="height: 100%;">
+                        <div class="carousel-item active">
+                            <img src="images/bg1-carousel-main.jpg" class="d-block w-100" alt="bg1" style="object-fit: cover; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bg2-carousel-main.png" class="d-block w-100" alt="bg2" style="object-fit: cover; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bg3-carousel-main.png" class="d-block w-100" alt="bg3" style="object-fit: cover; height: 100%;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bg4-carousel-main.png" class="d-block w-100" alt="bg4" style="object-fit: cover; height: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div style="
+                    position: absolute;
+                    top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    z-index: 2;
+                    color: #fdf3cf;
+                    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+                ">
+                    <h3 style="font-weight: bold; margin-bottom: 20px;">
+                    Start your journey today and explore the galaxy of Honkai: Star Rail!
+                    </h3>
+                    <div style="display: flex; gap: 20px;">
+                    <a href="story.html">
+                        <button type="button" class="btn btn-outline-light">Discover the Story</button>
+                    </a>
+                    <a href="characters.html">
+                        <button type="button" class="btn btn-outline-light">Meet the Heroes</button>
+                    </a>
+                    </div>
+                </div>
+
+                <div style="
+                    position: absolute;
+                    top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    background: rgba(0,0,0,0.4);
+                    z-index: 1;
+                "></div>
             </section>
         </main>
         
+        <footer style="background-color: #1e1e1e; color: #f0e6d2; text-align: center; padding: 20px 0; margin-top: 40px;">
+            <div>
+                <p style="margin: 0; font-weight: 500;">© 2025 HoYoverse Fan Project — Honkai: Star Rail</p>
+                <p style="margin: 5px 0 10px 0; font-size: 0.9rem;">May this journey lead us starward ᯓ★</p>
+            </div>
 
+            <div style="margin-bottom: 10px; font-size: 14px;">
+                <a href="https://www.hoyolab.com/" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/hoyolab-icon.png" alt="hoyolab" style="width: 25px; height: auto;">
+                </a>
+                <a href="https://twitter.com/honkaistarrail" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/twitter.png" alt="twitter" style="width: 18px; height: auto;">
+                </a>
+                <a href="https://www.instagram.com/honkaistarrail/" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/instagram.png" alt="instagram" style="width: 20px; height: auto;">
+                </a>
+                <a href="https://www.youtube.com/@HonkaiStarRail" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/youtube.png" alt="youtube" style="width: 23px; height: auto;">
+                </a>
+            </div>
+
+            <small style="display: block; color: #a9a9a9; font-size: 0.8rem;">
+                Fan-made website for educational purposes. All rights belong to HoYoverse.
+            </small>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
