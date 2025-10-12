@@ -67,3 +67,35 @@ li {
     border-radius: 8px;
     margin: 2px;
 }
+
+#carouselExampleCaptions .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#carouselExampleCaptions .carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.section-box {
+    border: 1px solid #43434c;
+    border-radius: 9px;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    padding: 25px;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.section-box h1,
+.section-box h2,
+.section-box h3,
+.section-box h4,
+.section-box h5,
+.section-box h6,
+.section-box p {
+    color: #edcda5;
+}
