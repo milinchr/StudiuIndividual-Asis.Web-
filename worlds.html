@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HSR: Story</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" 
+        rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body class="body-story">
+        <header class="Header-navigation">
+            <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="main-page.html"><img src="images/logo.png" alt="logo" height="35px" weight="35px"></img></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" aria-current="page" href="main-page.html">Home</a>
+                            <a class="nav-link" href="characters.html">Characters</a>
+                            <a class="nav-link active" href="worlds.html">Worlds</a>
+                            <a class="nav-link" href="express-ticket.html">Astral Express Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section style="text-align:center; margin-top:40px;">
+            <h1>The Journey Across Worlds</h1>
+            <p>Follow the Trailblazer’s adventure across galaxies — each world with its own destiny.</p>
+            </section>
+
+            <div style="display:flex; justify-content:center; margin:50px 0;">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+                    style="width:80%; max-width:1000px; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <a href="#herta"><img src="images/story-carousel/herta-station.png" class="d-block w-100" alt="Herta Space Station"></a>
+                        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px;">
+                        <h5>Herta Space Station</h5>
+                        <p>The beginning of the Trailblazer’s journey — a hub of knowledge and experiments.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#belobog"><img src="images/story-carousel/belobog.webp" class="d-block w-100" alt="Belobog"></a>
+                        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px;">
+                        <h5>Belobog</h5>
+                        <p>A city of eternal winter, divided between the Surface and the Underworld.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#xianzhou"><img src="images/story-carousel/xianzhou.jpg" class="d-block w-100" alt="Xianzhou Luofu"></a>
+                        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px;">
+                        <h5>Xianzhou Luofu</h5>
+                        <p>A majestic alliance ship seeking immortality and balance among the stars.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#penacony"><img src="images/story-carousel/penacony.webp" class="d-block w-100" alt="Penacony"></a>
+                        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px;">
+                        <h5>Penacony</h5>
+                        <p>The dreamlike world of celebration — where truth hides behind illusions.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#amphoreus"><img src="images/story-carousel/amphoreus.jpg" class="d-block w-100" alt="Amphoreus"></a>
+                        <div class="carousel-caption d-none d-md-block" style="background:rgba(0,0,0,0.45); border-radius:8px;">
+                        <h5>Amphoreus</h5>
+                        <p>A sunken realm reborn from chaos, where ancient civilizations meet the unknown.</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <section id="herta" style="padding:50px; text-align:center;" class="section-box">
+            <h2>Herta Space Station</h2>
+            <section style="text-align: left;">
+                <h3>Past</h3>
+                <p style="color: white;">
+                    Herta created the Space Station to seal the Stellaron and protect the Blue. Initially a warehouse for rare items, it 
+                    gradually became a research base as followers conducted studies. She made a deal with the Garden of Recollection to store 
+                    Light Cones. Significant hires included Hosea Lazaro, who caused the "Station Breakout", Asta as Lead Researcher, and Arlan 
+                    as head of Security. Driven by curiosity about the Aeons, Herta collaborated with Screwllum, Ruan Mei, and Stephen Lloyd to 
+                    create a Simulated Universe hosted in the station.
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h3>Present</h3>
+                <p style="color: white;">
+                    In 2157 AE, Silver Wolf and Kafka invaded the station to steal the Stellaron, causing chaos and the deaths of several researchers. 
+                    The Trailblazer was affected, but Dan Heng, March 7th, and Arlan managed to survive, and Welt eventually sealed the Stellaron. 
+                    Ruan Mei now experiments in the Seclusion Zone, releasing True Stings that the Trailblazer had to handle. Duke Inferno attempted 
+                    another invasion but was stopped by the coordinated effort of Dr. Ratio, Asta, Screwllum, and the Trailblazer. Later, Herta shut 
+                    down the station to communicate with Nous, and was eventually found in a trance by Welt and Sunday, who helped her recover and 
+                    agree to assist them.
+                </p>
+            </section>
+            <img src="images/worlds/herta-station.png" style="width:60%; border-radius:10px; margin-top:10px;">
+            </section>
+
+            <section id="belobog" style="padding:50px; text-align:center;" class="section-box">
+            <h2>Belobog</h2>
+            <section style="text-align: left;">
+                <h3>Before the Eternal Freeze</h3>
+                <p style="color: white;">
+                    Around 1800 BF, a diplomat from Saya encountered a tribe honoring the god of war, Jarroway. By 1200 BF, the “Jarilo” festival was 
+                    celebrated in northern Nycatha. Around 1000 BF, the Aeon Akivili connected Jarilo-VI to other worlds, opening contact with intergalactic 
+                    civilizations. In 66 BF, Katana Thomas was born, later joining the “Great Voyage” from Novgofia to Belobog, bringing art and culture. Roughly 
+                    30 BF, a Stellaron fell on Jarilo-VI, sparking panic and mass migrations. Under Architect Alisa Rand, shelters were built—her city, Belobog, 
+                    would mark the Fortification. Around 20 BF, the Antimatter Legion invaded. Rand led the 30-year Defense of Belobog until Thomas’s death in 12 BF.
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h3>The Fortification</h3>
+                <p style="color: white;">
+                    The Fortification marks Belobog’s completion. Desperate, Alisa Rand activated the Stellaron, triggering the Eternal Freeze that engulfed Jarilo-VI 
+                    in ice while preserving Belobog through the power of Preservation. The Antimatter Legion’s attacks ceased, and Rand became the first Supreme Guardian, 
+                    revered as “She Who Evokes Miracles.”
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h3>After the Eternal Freeze — Ice Age</h3>
+                <p style="color: white;">
+                    Over centuries, Belobog rebuilt under the Eternal Freeze. In 144 AF, Curfew Regulation 101 was signed. Discovery of Geomarrow’s medical uses in 376 AF 
+                    led to the Bellerain brand by 390 AF. Natasha graduated in 683 AF and opened an orphanage in Rivet Town after years of service. Under Supreme Guardian 
+                    Cocolia, the Underworld was sealed. By 694 AF, the Fragmentum spread to Rivet Town, forcing evacuation and abandonment.
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h3>Present (~700 AF)</h3>
+                <p style="color: white;">
+                    The Astral Express arrives on Jarilo-VI to investigate the Stellaron. The Trailblazer, Dan Heng, and March 7th meet Cocolia, Bronya, and the Silvermane 
+                    Guards. Betrayed by the Stellaron’s influence, Cocolia attempts to destroy the planet but is stopped by the Astral Express Crew and Bronya. Cocolia dies;
+                     Bronya becomes the nineteenth Supreme Guardian, uniting the Overworld and Underworld and sealing the Stellaron to end the Eternal Freeze.
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h3>Reconstruction and Renewal</h3>
+                <p style="color: white;">
+                    After reopening communication with the cosmos, Belobog faces IPC debt collectors led by Topaz. Refusing an exploitative contract, Bronya rallies the 
+                    people to repair the Engine of Creation, proving Belobog’s resilience. The IPC’s Energy Upgrade Program is approved, heralding a new technological age. 
+                    Wildlife reappears, signaling planetary recovery.
+                </p>
+            </section>
+
+            <section style="text-align: left;">
+                <h3>Events of 700 AF</h3>
+                <p style="color: white;">
+                    The History and Culture Museum reopens with the “Everwinter City Museum Ledger of Curiosities.” Later, the “Aetherium Wars” festival transforms Belobog
+                     into a gaming capital. Luka represents Belobog in the Luminary Wardance on the Luofu, meeting Jing Yuan and renewing ties between the two worlds. A
+                      trade alliance is forged, and a photo of Igor Haft and Jing Yuan from centuries past now hangs in Belobog’s museum—symbolizing hope and restored 
+                      connections across the galaxy.
+                </p>
+            </section>
+            <img src="images/worlds/belobog.png" style="width:60%; border-radius:10px; margin-top:10px;">
+            </section>
+
+            <section id="xianzhou" style="padding:50px; text-align:center;" class="section-box">
+            <h2>Xianzhou Luofu</h2>
+            <section style="text-align: left;">
+            <h3>The Age of Departure</h3>
+            <p style="color: white;">
+                The Xianzhou Alliance left their homeworld aboard the nine dragonships, vowing to pursue immortality under the blessing of the Aeon Yaoshi. Among them, 
+                the Luofu set sail across the stars, carrying countless lives and a vision of eternal prosperity.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>The Ambrosial Age</h3>
+            <p style="color: white;">
+                The Ambrosial Arbor was planted aboard the Luofu, granting immortality to its citizens and sparking a golden era of growth. Yet as centuries passed, 
+                eternal life brought unrest—wars, sects, and internal strife divided the immortal people. The Cloud Knights rose to maintain order.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>The War of Rebellion</h3>
+            <p style="color: white;">
+                The pursuit of immortality led to corruption and bloodshed. The Luofu endured countless uprisings and purges. The Firmament Sects formed to restore balance, 
+                but the price was great—countless immortals perished, and faith in Yaoshi waned.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>The Era of Reflection</h3>
+            <p style="color: white;">
+                Seeking redemption, the Xianzhou sealed the Ambrosial Arbor beneath the Luofu. Under Imbibitor Lunae’s guidance, the people turned from divine arrogance 
+                to harmony. The High-Cloud Quintet emerged as heroes, defending the ship and guiding its destiny for millennia.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>The Present Day</h3>
+            <p style="color: white;">
+                In the present era, the Stellaron Crisis strikes the Luofu. The Astral Express Crew arrives to aid its people, confronting Phantylia and uncovering the hidden 
+                truth of the Ambrosial Arbor. Old wounds reopen, yet a new future begins as the Luofu reclaims its place among the stars.
+            </p>
+            </section>
+            <img src="images/worlds/xianzhou.png" style="width:60%; border-radius:10px; margin-top:10px;">
+            </section>
+
+            <section id="penacony" style="padding:50px; text-align:center;" class="section-box">
+            <h2>Penacony</h2>
+            <section style="text-align: left;">
+            <h3>Prison Era</h3>
+            <p style="color: white;">
+                Before Akivili's fall, Penacony was a barren desert world serving as an IPC prison planet. Countless inmates extracted Memory Bubbles for the Garden of 
+                Recollection to prevent a spreading catastrophe. Over time, the prison disconnected from reality as inmates’ consciousnesses became linked within dreams.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>War of Independence</h3>
+            <p style="color: white;">
+                A Stellaron corrosion caused chaos, and the prisoner Hanunue led a rebellion against IPC control. In this great war, Hanunue fought alongside the Nameless, 
+                Masked Fools, Mourning Actors, History Fictionologists, and Omen Vanguards. The Astral Express arrived and connected Penacony to the Star Rail. Though IPC 
+                forces were driven off, Hanunue was mortally wounded and passed away. Seven family lineages were formed, but two—Lampmoth and Blackplum—eventually perished. 
+                Their fall marked a disaster that reshaped Penacony.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>Pioneering Era</h3>
+            <p style="color: white;">
+                After the war, Glaux founded Paperfold University to train Dreamweavers and restore the Dreamscape. Razalina vanished during a solo mission into the Memory 
+                Zone. A Stellaron crisis followed, but Mikhail, aided by Gopher Wood, contained it by creating the “Dream of the Order.” Dreamchasers began arriving in 
+                Penacony, expanding and fighting over territories, leading to further conflicts.
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>Dreamchaser Era</h3>
+            <p style="color: white;">
+                Following ages of turmoil, the Nightingale Family invited architects and memoria scholars to build the Dreamscape, marking the Dreamchaser Era. The 
+                Dreamweaving Project began in 2151 AE, planning the Twelve Dreamscapes. The Reverie Hotel opened and the first Charmony Festival was held. Gopher Wood 
+                sought to unite all Families under Harmony, but the Nightingales resisted. Violence from the Bloodhound Family forced Glaux to resign; his student Fischer 
+                joined The Family to avoid bloodshed, while Orla rebuilt Dreamflux Reef as a sanctuary for those disillusioned by “the sweet dream.”
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>Charmony Festival (2158 AE)</h3>
+            <p style="color: white;">
+                The Family invited many galactic factions to Penacony’s first grand Charmony Festival. Among the guests were the Astral Express Crew, Stellaron Hunters, 
+                IPC, Garden of Recollection, and more. In truth, the invitations were part of the Watchmaker’s plan to reveal Penacony’s secrets. During the festival, 
+                traitors in The Family attempted to use a hidden Stellaron and Harmony’s song to brainwash the world into following Order, but their plan was foiled by
+                 the Astral Express Crew. 
+            </p>
+            </section>
+
+            <section style="text-align: left;">
+            <h3>Aftermath and Negotiations</h3>
+            <p style="color: white;">
+                With Sunday’s downfall, leadership passed to Oti Alfalfa. Negotiations with IPC representatives Jade and Topaz followed. To prevent IPC domination, 
+                Oti accepted a deal granting the Family autonomy while IPC gained 30% of Penacony’s shares. Himeko was awarded 5% to honor the Nameless’ contributions. 
+                This marked a new beginning for Penacony—one built on fragile peace and hard-earned freedom.
+            </p>
+            </section>
+            <img src="images/worlds/penacony.png" style="width:60%; border-radius:10px; margin-top:10px;">
+            </section>
+
+            <section id="amphoreus" style="padding:50px; text-align:center;" class="section-box">
+            <h2>Amphoreus</h2>
+            <section style="text-align: left;">
+            <h3>The Experiment of Amphoreus</h3>
+            <p style="color: white;">
+                Amphoreus was once a lifeless world where Aeon Nous conducted a grand experiment: to create a civilization guided purely by logic and reason. Under 
+                Nous’ supervision, the first synthetic beings—Echoes—were born. They sought knowledge and perfection, serving as extensions of Nous’ will. This marked 
+                the beginning of the Inorganic Era.
+            </p>
+        </section>
+
+        <section style="text-align: left;">
+            <h3>The Rise of the Organics</h3>
+            <p style="color: white;">
+                Over countless cycles, the Echoes evolved. Seeking balance, they created biological life to explore emotion and imperfection. Thus began the Organic Era. 
+                But the coexistence between logic and emotion led to discord—the Organics desired freedom, while the Echoes clung to order.
+            </p>
+        </section>
+
+        <section style="text-align: left;">
+            <h3>The Age of Humanity</h3>
+            <p style="color: white;">
+                The Organics eventually gave rise to the first humans of Amphoreus. Free from Nous’ control, they built societies and sought to understand the universe 
+                through both faith and science. The rift between creation and creator deepened, as the humans questioned the meaning of existence itself.
+            </p>
+        </section>
+
+        <section style="text-align: left;">
+            <h3>The Era Nova</h3>
+            <p style="color: white;">
+                After Nous’ silence, the civilizations of Amphoreus began merging their faiths and philosophies, ushering in the Era Nova—a time of synthesis between logic 
+                and soul. Yet, ancient remnants of the experiment still influenced their destiny, as forbidden knowledge resurfaced from beneath the planet’s surface.
+            </p>
+        </section>
+
+        <section style="text-align: left;">
+            <h3>Eternal Recurrence</h3>
+            <p style="color: white;">
+                In the end, Amphoreus entered the cycle known as the Eternal Recurrence. Time folded upon itself, and the boundaries between creator and creation vanished. 
+                The Astral Express arrived amid this paradox, seeking Nous, whose awakening threatened to erase the distinction between thought and being itself.
+            </p>
+        </section>
+            <img src="images/worlds/amphoreus.png" style="width:60%; border-radius:10px; margin-top:10px;">
+            </section>
+        </main>
+
+        <footer style="background-color: #1e1e1e; color: #f0e6d2; text-align: center; padding: 20px 0; margin-top: 40px;">
+            <div>
+                <p style="margin: 0; font-weight: 500;">© 2025 HoYoverse Fan Project — Honkai: Star Rail</p>
+                <p style="margin: 5px 0 10px 0; font-size: 0.9rem;">May this journey lead us starward ᯓ★</p>
+            </div>
+
+            <div style="margin-bottom: 10px; font-size: 14px;">
+                <a href="https://www.hoyolab.com/" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/hoyolab-icon.png" alt="hoyolab" style="width: 25px; height: auto;">
+                </a>
+                <a href="https://twitter.com/honkaistarrail" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/twitter.png" alt="twitter" style="width: 18px; height: auto;">
+                </a>
+                <a href="https://www.instagram.com/honkaistarrail/" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/instagram.png" alt="instagram" style="width: 20px; height: auto;">
+                </a>
+                <a href="https://www.youtube.com/@HonkaiStarRail" target="_blank" style="color: #edcda5; text-decoration: none; margin: 0 10px;">
+                    <img src="images/youtube.png" alt="youtube" style="width: 23px; height: auto;">
+                </a>
+            </div>
+
+            <small style="display: block; color: #a9a9a9; font-size: 0.8rem;">
+                Fan-made website for educational purposes. All rights belong to HoYoverse.
+            </small>
+        </footer>
+    </body>
+</html>

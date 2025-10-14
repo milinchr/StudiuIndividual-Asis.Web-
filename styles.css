@@ -1,5 +1,6 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
 p {
@@ -98,4 +99,32 @@ li {
 .section-box h6,
 .section-box p {
     color: #edcda5;
+}
+
+.body-story {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("images/bg2-carousel-main.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.body-express {
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)),
+        url("images/astral-express.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+form {
+    width: 90%; 
+    max-width: 700px; 
+    background-color: rgba(0,0,0,0.6); 
+    padding: 30px; border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
