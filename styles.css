@@ -44,6 +44,31 @@ li {
     background-color: #fdf3cf;
     border: 1px solid #fdf3cf;
 }
+/* По умолчанию — фиксированная высота для больших экранов */
+.cta-section {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Для экранов меньше 1100px — делаем секцию адаптивной */
+@media screen and (max-width: 1100px) {
+    .cta-section {
+        height: auto; /* высота будет подстраиваться под контент */
+    }
+
+    .cta-section .carousel-item img {
+        height: auto;       /* изображение растягивается под высоту контента */
+        max-height: 100vh;  /* не вылезает за экран */
+        width: 100%;        /* обязательно 100% ширины */
+        object-fit: cover;  /* сохранение пропорций и обрезка */
+    }
+
+    /* Контейнер с overlay текстом */
+    .cta-section > div:nth-child(2) {
+        padding: 40px 20px; /* чуть больше отступов для мобильного */
+    }
+}
 
 .table-char {
     border: 1px solid #43434c;
